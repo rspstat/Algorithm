@@ -15,7 +15,8 @@ int main() {
     return 0;
 }
 
-long long pow_mod(long long a, long long b, long long c) {  //분할 정복
+//분할 정복
+long long pow_mod(long long a, long long b, long long c) {  
     if (b == 0)      //a^0 = 1
         return 1;  
     
