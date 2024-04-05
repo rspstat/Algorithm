@@ -4,8 +4,7 @@
 
 using namespace std;
 
-int main(void)
-{
+int main() {
 	stack<char> s;
 	int n= 0;
     cin >> n;
