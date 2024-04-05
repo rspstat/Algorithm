@@ -5,11 +5,11 @@
 using namespace std;
 
 int main() {
-	stack<char> s;
-	int n= 0;
+	int n = 0;
     cin >> n;
 
     while (n--) {
+        stack<char> s;  //스택 초기화, 재선언하면 초기화됨
         string str;
         cin >> str;
 
@@ -38,10 +38,6 @@ int main() {
 
         else
             cout << "NO" << "\n";
-
-        while (!s.empty())      //스택 초기화
-            s.pop();
-
     }
 
     return 0;
