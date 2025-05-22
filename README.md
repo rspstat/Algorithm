@@ -14,7 +14,7 @@
 
 ### Study Link
 
-(알고리즘, 안경잡이개발자)(https://blog.naver.com/ndb796/221312837477)]
+(알고리즘, 안경잡이개발자)[https://blog.naver.com/ndb796/221312837477]
 
 <br/>
 
