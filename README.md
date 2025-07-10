@@ -1,5 +1,7 @@
 ## BOJ Algorithm Solving
 
+![image](https://github.com/user-attachments/assets/2ae6e959-0b3b-4da5-b72d-dfcfab434e03)
+
 ### TIP
 
 1. C언어에서는 <stdlib.h> 라이브러리에 qsort(정렬할 배열의 시작 주소, 배열의 개수, 배열의 크기, 비교 함수)가 있다.
@@ -29,3 +31,4 @@ int compare(const void *a, const void *b) {
     return (*(int*)a - *(int*)b);
 }
 ```
+
