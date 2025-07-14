@@ -30,5 +30,8 @@
 int compare(const void *a, const void *b) {
     return (*(int*)a - *(int*)b);
 }
+
+배열 초기화:
+memset(visited, false, sizeof(visited));
 ```
 
