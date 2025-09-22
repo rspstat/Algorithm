@@ -1,12 +1,14 @@
 ## BOJ Algorithm Solving
 
-![image](https://github.com/user-attachments/assets/2ae6e959-0b3b-4da5-b72d-dfcfab434e03)
+### 2025-09-22 Platinum 달성
+
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=rspstat1058)](https://solved.ac/rspstat1058/)
 
 ---
 
 <br/>
 
-[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=rspstat1058)](https://solved.ac/rspstat1058/)
+![image](https://github.com/user-attachments/assets/2ae6e959-0b3b-4da5-b72d-dfcfab434e03)
 
 ---
 
