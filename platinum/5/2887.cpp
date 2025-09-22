@@ -22,21 +22,21 @@ void solve() {
     int n; cin >> n;
     vector<array<int,2>> X(n), Y(n), Z(n);
     for (int i = 0; i < n; ++i) {
-        int x,y,z; cin >> x >> y >> z;
-        X[i] = {x,i};
-        Y[i] = {y,i};
-        Z[i] = {z,i};
+        int x, y, z; cin >> x >> y >> z;
+        X[i] = {x, i};
+        Y[i] = {y, i};
+        Z[i] = {z, i};
     }
     sort(X.begin(), X.end());
     sort(Y.begin(), Y.end());
     sort(Z.begin(), Z.end());
 
     vector<Edge> edges;
-    edges.reserve(3*(n-1));
-    for (int i = 0; i < n-1; ++i) {
-        edges.push_back({X[i].second, X[i+1].second, abs(X[i+1][0]-X[i][0])});
-        edges.push_back({Y[i].second, Y[i+1].second, abs(Y[i+1][0]-Y[i][0])});
-        edges.push_back({Z[i].second, Z[i+1].second, abs(Z[i+1][0]-Z[i][0])});
+    edges.reserve(3 * (n - 1));
+    for (int i = 0; i < n - 1; ++i) {
+        edges.push_back({X[i][1], X[i+1][1], abs(X[i+1][0] - X[i][0])});
+        edges.push_back({Y[i][1], Y[i+1][1], abs(Y[i+1][0] - Y[i][0])});
+        edges.push_back({Z[i][1], Z[i+1][1], abs(Z[i+1][0] - Z[i][0])});
     }
 
     sort(edges.begin(), edges.end());
@@ -46,7 +46,7 @@ void solve() {
     for (auto &e : edges) {
         if (dsu.unite(e.u, e.v)) {
             ans += e.w;
-            if (++cnt == n-1) break;
+            if (++cnt == n - 1) break;
         }
     }
     cout << ans << '\n';
