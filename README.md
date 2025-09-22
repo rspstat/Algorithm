@@ -2,6 +2,16 @@
 
 ![image](https://github.com/user-attachments/assets/2ae6e959-0b3b-4da5-b72d-dfcfab434e03)
 
+---
+
+<br/>
+
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=8804who)](https://solved.ac/8804who/)
+
+---
+
+<br/>
+
 ### TIP
 
 1. C언어에서는 <stdlib.h> 라이브러리에 qsort(정렬할 배열의 시작 주소, 배열의 개수, 배열의 크기, 비교 함수)가 있다.
