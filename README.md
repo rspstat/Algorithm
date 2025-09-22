@@ -6,7 +6,7 @@
 
 <br/>
 
-[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=8804who)](https://solved.ac/8804who/)
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=rspstat1058)](https://solved.ac/rspstat1058/)
 
 ---
 
