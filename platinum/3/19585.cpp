@@ -6,7 +6,7 @@ using pii = pair<int,int>;
 
 static const int M1 = 1'000'000'007;
 static const int M2 = 1'000'000'009;
-static const int B  = 911382323; // base < M1, M2
+static const int B  = 911382323;
 
 struct PHash {
     size_t operator()(const pii& p) const noexcept {
@@ -51,7 +51,6 @@ struct PrefHash {
         }
     }
     inline pii sub(int l, int r) const {
-        // [l, r], 0-indexed
         int len = r - l + 1;
         int x1 = (int)(( h1[r+1] - 1LL * h1[l] * pw1[len] ) % M1);
         if (x1 < 0) x1 += M1;
@@ -94,7 +93,6 @@ int main() {
 
         bool ok = false;
         for (int i = 1; i < L && !ok; ++i) {
-            // prefix [0..i-1] in colors AND suffix [i..L-1] in names
             if (col.find(ph.sub(0, i - 1)) != col.end() &&
                 nam.find(ph.sub(i, L - 1)) != nam.end()) {
                 ok = true;
