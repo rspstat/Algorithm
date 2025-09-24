@@ -50,7 +50,7 @@ void solve() {
     link(5,6);
     link(6,7);
 
-    // walks of length n from 0 to 0 == (A^n)[0][0]
+    // 0 to 0 == (A^n)[0][0]
     Mat An = mpow(A, n);
     cout << An[0][0] % MOD << '\n';
 }
