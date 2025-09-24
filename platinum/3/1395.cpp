@@ -3,7 +3,7 @@
 using namespace std;
 
 struct SegTree {
-	int tree[1 << 18]; //arr[0, n-1] -> tree[sz, sz + n - 1]
+	int tree[1 << 18]; 
 	int sz = 1 << 17;
 	bitset<1 << 18> lazy;
 
@@ -12,6 +12,7 @@ struct SegTree {
 			tree[i] = tree[i << 1] + tree[i << 1 | 1];
 		}
 	}
+
 	void propagate(int node, int nodeL, int nodeR) {
 		if (lazy[node]) {
 			if (node < sz) {
@@ -22,7 +23,7 @@ struct SegTree {
 			lazy[node] = 0;
 		}
 	}
-	//[l, r] flip
+
 	void update(int L, int R, int nodeNum, int nodeL, int nodeR) {
 		propagate(nodeNum, nodeL, nodeR);
 		if (R < nodeL || nodeR < L) return;
@@ -39,7 +40,7 @@ struct SegTree {
 	void update(int l, int r) {
 		update(l, r, 1, 1, sz);
 	}
-	//[l, r] : 1-indexed
+
 	int query(int L, int R, int nodeNum, int nodeL, int nodeR) {
 		propagate(nodeNum, nodeL, nodeR);
 		if (R < nodeL || nodeR < L) return 0;
