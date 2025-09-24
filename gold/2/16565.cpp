@@ -25,7 +25,6 @@ int main(){
     if(!(cin >> n)) return 0;
     if(n < 4){ cout << 0 << "\n"; return 0; }
 
-    // factorials up to 52
     const int M = 52;
     vector<int> f(M+1,1), invf(M+1,1);
     for(int i=1;i<=M;i++) f[i]=mul(f[i-1], i);
