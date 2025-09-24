@@ -9,7 +9,6 @@ int N, M, K;
 vector<ll> arr;
 vector<ll> tree;
 
-// Calculates the prefix sum up to index 'idx'
 ll sum(int idx) {
     ll result = 0;
     while (idx > 0) {
@@ -19,7 +18,6 @@ ll sum(int idx) {
     return result;
 }
 
-// Adds 'diff' to the element at 'idx' and updates the tree
 void update(int idx, ll diff) {
     while (idx <= N) {
         tree[idx] += diff;
@@ -46,11 +44,11 @@ int main() {
         ll b, c;
         cin >> a >> b >> c;
 
-        if (a == 1) { // Update operation
+        if (a == 1) {
             ll diff = c - arr[b];
             arr[b] = c;
             update(b, diff);
-        } else { // Sum query operation
+        } else {
             cout << sum(c) - sum(b - 1) << "\n";
         }
     }
