@@ -9,8 +9,8 @@ using namespace std;
 void insert(map<int, long long int>& v, vector<long long int>& sum, int x);
 
 int main() {
-    ios::sync_with_stdio(0);    // 실제로는 printf, scanf가 빠르다.
-    cin.tie(0); cout.tie(0);    // C++에서 C의 stdio buffer를 동기화하는 과정에서 딜레이 발생하기 때문.
+    ios::sync_with_stdio(0);   
+    cin.tie(0); cout.tie(0);    
 
     map<int, long long int> tree;
     tree.insert(pair<int, long long int> {0, -1});  // 초기값 삽입
@@ -52,5 +52,5 @@ void insert(map<int, long long int>& v, vector<long long int>& sum, int x) {
     else 
         sum.push_back(cnt);  // 첫 번째 값 처리
     
-    return ;    // void 함수에서 함수 종료 선언
+    return ;  
 }
