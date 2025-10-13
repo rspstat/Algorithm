@@ -2,8 +2,6 @@
 
 <br/>
 
-### 2025-09-22 Platinum 달성
-
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=rspstat1058)](https://solved.ac/rspstat1058/)
 
 <br/>
