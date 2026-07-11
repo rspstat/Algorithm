@@ -22,17 +22,7 @@
 2. 제발 math.h, cmath 적극적으로 활용하자...
 3. unordered_map: O(1) / Worst case = O(N), map: 정렬도 필요할 때 = O(log N)
 4. string str; cin >> str; 하고, 정수로 더하고 싶으면 sum += (str[i] - '0'); 으로 0의 아스키 코드 값(48)을 빼주면 원래 정수 값으로 더해짐(문자 -> 정수 트릭)
-5. 
-
-<br/>
-
----
-
-<br/>
-
-### Link
-
-[알고리즘, 안경잡이개발자](https://blog.naver.com/ndb796/221312837477)
+5. [알고리즘, 안경잡이개발자](https://blog.naver.com/ndb796/221312837477)
 
 <br/>
 
@@ -42,12 +32,12 @@
 
 ### Some codes
 ```
-비교 함수:
+Compare Function:
 int compare(const void *a, const void *b) {
     return (*(int*)a - *(int*)b);
 }
 
-배열 초기화:
+Reset Array:
 memset(visited, false, sizeof(visited));
 ```
 
