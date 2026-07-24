@@ -18,7 +18,6 @@
 
 <br/>
 
-### Some codes
 ```
 Compare Function:
 int compare(const void *a, const void *b) {
