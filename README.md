@@ -16,20 +16,6 @@
 
 <br/>
 
-### TIP
-
-1. C언어에서는 <stdlib.h> 라이브러리에 qsort(정렬할 배열의 시작 주소, 배열의 개수, 배열의 크기, 비교 함수) 존재
-2. math.h, cmath 적극적으로 활용
-3. unordered_map: O(1) / Worst case = O(N), map: 정렬도 필요할 때 = O(log N)
-4. string str; cin >> str; 하고, 정수로 더하고 싶으면 sum += (str[i] - '0'); 으로 0의 아스키 코드 값(48)을 빼주면 원래 정수 값으로 더해짐(문자 -> 정수 트릭)
-5. [알고리즘, 안경잡이개발자](https://blog.naver.com/ndb796/221312837477)
-
-<br/>
-
----
-
-<br/>
-
 ### Some codes
 ```
 Compare Function:
