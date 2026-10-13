@@ -10,6 +10,12 @@
 
 <br/>
 
+![image](/assets/main.png)
+
+---
+
+<br/>
+
 ![image](https://github.com/user-attachments/assets/2ae6e959-0b3b-4da5-b72d-dfcfab434e03)
 
 <br/>
